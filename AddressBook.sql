@@ -33,3 +33,15 @@ Go
 ---Retrieve all data from AddressBookTable---------
 SELECT * FROM AddressBookTable
 Go
+
+
+---UC4
+---Edit contact using their name
+UPDATE AddressBookTable SET Phonenum=97456638984 WHERE FirstName='Mohsin'
+Go
+UPDATE AddressBookTable SET LastName='Raouf' WHERE FirstName='Abdul'
+Go
+UPDATE AddressBookTable SET EmailId='raj12@gmail.com' WHERE LastName='Mahajan'
+Go
+select * from AddressBookTable
+Go
