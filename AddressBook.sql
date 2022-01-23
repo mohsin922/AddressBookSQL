@@ -21,3 +21,15 @@ EmailId varchar(MAX) Not Null
 )
 Go
 exec sp_help AddressBookTable
+
+--UC3
+--Insert Data into tables using fields
+INSERT  into AddressBookTable(FirstName,LastName,Address,City,StateName,ZipCode,Phonenum,EmailId) VALUES
+('Mohsin','Zahoor','Kashmir','Srinagar','J&K',193444,8792810271,'peermohsin@gmail.com'),
+('Preksha','Arunachalam','Dehra','Dehradun','Himachal',3333333,8232322323,'prek@gmail.com'),
+('Raj','Mahajan','Trichi','Coimbatore','Tamil Nadu',444444,9112121212,'raj@gmail.com'),
+('Abdul','Ahmad','Baramulla','Srinagar','J&K',555555,9876543322,'abdul@gmail.com')
+Go
+---Retrieve all data from AddressBookTable---------
+SELECT * FROM AddressBookTable
+Go
