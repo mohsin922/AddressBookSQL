@@ -57,3 +57,8 @@ Go
 --Retrieve person's City
 SELECT FirstName FROM  AddressBookTable WHERE City='Coimbatore' or StateName='Tamil Nadu'
 Go
+
+--UC7
+--Size of the Address book
+SELECT COUNT(City) AS Size,City,StateName FROM AddressBookTable GROUP BY StateName,City
+Go
