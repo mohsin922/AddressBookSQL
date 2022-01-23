@@ -52,3 +52,8 @@ DELETE FROM AddressBookTable WHERE FirstName='Preksha'
 Go
 SELECT * FROM AddressBookTable
 Go
+
+--UC6
+--Retrieve person's City
+SELECT FirstName FROM  AddressBookTable WHERE City='Coimbatore' or StateName='Tamil Nadu'
+Go
