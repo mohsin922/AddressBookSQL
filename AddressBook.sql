@@ -62,3 +62,9 @@ Go
 --Size of the Address book
 SELECT COUNT(City) AS Size,City,StateName FROM AddressBookTable GROUP BY StateName,City
 Go
+
+--UC8
+select * from AddressBookTable
+where City = 'Srinagar'
+order by (FirstName)
+Go
