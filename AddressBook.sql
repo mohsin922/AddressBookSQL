@@ -68,3 +68,17 @@ select * from AddressBookTable
 where City = 'Srinagar'
 order by (FirstName)
 Go
+
+--UC9
+Alter table AddressBookTable add Name varchar(MAX),Type varchar(MAX)
+Go
+
+update AddressBookTable set Name='Mohsin Zahoor' where firstName ='Mohsin'
+update AddressBookTable set Name='Raj Mahajan' where firstName ='Raj'
+update AddressBookTable set Name='Abdul Raouf' where firstName ='Abdul'
+GO
+
+update AddressBookTable set Type ='Family' where firstName='Mohsin'
+update AddressBookTable set Type ='Professional' where firstName='Raj'
+update AddressBookTable set Type ='Friends' where firstName='Abdul'
+Select * from AddressBookTable
