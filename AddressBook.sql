@@ -91,3 +91,14 @@ select Type, count(TYPE) as TypeCount
 from AddressBookTable
 group by Type
 Go
+
+
+--UC11
+delete AddressBookTable where firstName ='Abdul'
+INSERT  into AddressBookTable(FirstName,LastName,Address,City,StateName,ZipCode,Phonenum,EmailId,Name,Type) VALUES
+('Abdul','Raouf','Baramulla','Srinagar','J&K',555555,9876543322,'abdul@gmail.com','Abdul Raouf', 'Friend')
+GO
+INSERT  into AddressBookTable(FirstName,LastName,Address,City,StateName,ZipCode,Phonenum,EmailId,Name,Type) VALUES
+('Abdul','Raouf','Baramulla','Srinagar','J&K',555555,9876543322,'abdul@gmail.com','Abdul Raouf', 'Family')
+GO
+Select * from AddressBookTable
