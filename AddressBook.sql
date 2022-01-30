@@ -82,3 +82,12 @@ update AddressBookTable set Type ='Family' where firstName='Mohsin'
 update AddressBookTable set Type ='Professional' where firstName='Raj'
 update AddressBookTable set Type ='Friends' where firstName='Abdul'
 Select * from AddressBookTable
+
+--UC10
+select count(type) 
+from AddressBookTable
+Go
+select Type, count(TYPE) as TypeCount 
+from AddressBookTable
+group by Type
+Go
